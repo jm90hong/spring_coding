@@ -15,4 +15,11 @@ public class HomeController {
 		
 		return "home";
 	}
+	
+	@GetMapping(value="/add_todo")
+	public  String add_todo() {
+		
+		
+		return "add-todo";
+	}
 }

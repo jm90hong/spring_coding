@@ -5,6 +5,12 @@
    src:url(../font/NotoSansKR-Regular.otf) format('opentype');
 }
 
+@font-face{
+   font-family:"bold";
+   font-style:normal;
+   src:url(../font/NotoSansKR-Black.otf) format('opentype');
+}
+
 
 :root{
 	--app-color:#1C61FF;
@@ -96,6 +102,32 @@ header > div.header img{
 	margin:0 auto;
 }
 
+.section-container .title-box{
+	 display:flex;
+	 justify-content:space-between;
+	 align-items:center;
+}
+
+
+.app-text-btn{
+	font-size:15px;
+	font-weight:700;
+	cursor:pointer;
+}
+
+
+.app-text-btn:hover{
+	color:var(--app-color);
+	
+}
+
+.section-container .big-title {
+	font-family:bold;
+	font-weight:700;
+	font-size:35px;
+}
+
+
 .info-card{
 	display:flex;
 	flex-direction:column;
@@ -148,4 +180,98 @@ header > div.header img{
 	font-size:20px;
 	font-weight:700;
 	margin-bottom:10px;
+}
+
+
+
+
+
+.todo-list-box{
+	padding:8px;
+	cursor:pointer;
+}
+
+.todo-list-box:hover{
+	background:#f9f9f9;
+}
+
+
+
+.todo-list-box .tag-box{
+	color:#fff;
+	font-weight:700;
+	font-size:15px;
+	padding:0px 8px;
+	border-radius:5px;
+}
+
+.todo-list-box .date{
+	color:#999;
+}
+
+.todo-list-box .tag-box.red{
+	background:red;
+}
+
+.todo-list-box .tag-box.yellow{
+	background:#FF8002;
+}
+
+.todo-list-box .title{
+	color:var(--color-main);
+	font-weight:700;
+	font-size:18px;
+	margin-left:8px;
+}
+
+.todo-list-box p.content{
+	color:#222;
+	font-size:15px;
+	padding-top:2px;
+}
+
+input.app-inp::placeholder {
+  
+  font-family:basic;
+}
+
+input.app-inp{
+	width:400px;
+	margin-top:20px;
+	padding:2px 3px;
+	outline:none;
+	border:1px solid transparent;
+	border-bottom:1px solid #dedede;
+	font-size:18px;
+	font-family:bold;
+	color:#2A2A2A;
+}
+
+input.app-inp:focus{
+	border-bottom:1px solid var(--app-color);
+}
+
+select.app-select-box{
+	width:400px;
+	margin-top:10px;
+	padding:4px 4px;
+}
+
+
+
+button.app-long-btn{
+	margin-top:40px;
+	width:400px;
+	padding:5px;
+	background:var(--app-color);
+	color:#fff;
+	font-size:14px;
+	font-weight:700;
+	outline:none;
+	border:1px solid #f2f2f2;
+	border-radius:4px;
+}
+
+button.app-long-btn:hover{
+	background:#222;
 }

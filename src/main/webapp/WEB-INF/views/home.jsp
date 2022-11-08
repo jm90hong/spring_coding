@@ -9,6 +9,12 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="./css/app.css"/>
 	<script src="https://kit.fontawesome.com/9299056aff.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+	  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+	  crossorigin="anonymous"></script>
+	  
+	 <script src="./js/home.js"></script>
+	 
 </head>
 <body>
 	
@@ -126,6 +132,57 @@
 	
 	<!-- coding todo   -->
 	<div class="section-container">
+		<div class="title-box">
+			<div class="big-title">우리의 코딩 공부 일정</div>
+			<span id="go-add-todo-btn" class="app-text-btn"><i class="fa-solid fa-plus"></i> 일정추가</span>
+		</div>
+		
+		<div id="todo-list">
+			<div class="todo-list-box">
+				<div style="display:flex;justify-content:space-between;">
+					<span>
+						<span class="tag-box red">중요</span>
+						<span class="title">웹 프론트</span>
+					</span>
+					<span class="date">
+						2022-11-13 작성
+					</span>
+				</div>
+				<p class="content">
+					스프링 전체 구조에서 웹프론트 구조 집중 복습하기
+				</p>
+			</div>
+			
+			<div class="todo-list-box">
+				<div style="display:flex;justify-content:space-between;">
+					<span>
+						<span class="tag-box red">중요</span>
+						<span class="title">스프링 백엔드</span>
+					</span>
+					<span class="date">
+						2022-11-11 작성
+					</span>
+				</div>
+				<p class="content">
+					Dao, Service, Mapper 의 정확한 사용법 알아가기
+				</p>
+			</div>
+			
+			<div class="todo-list-box">
+				<div style="display:flex;justify-content:space-between;">
+					<span>
+						<span class="tag-box yellow">보통</span>
+						<span class="title">데이터베이스</span>
+					</span>
+					<span class="date">
+						2022-11-10 작성
+					</span>
+				</div>
+				<p class="content">
+					mySQL 쿼리문 연습하기 / select, update, insert, delete
+				</p>
+			</div>
+		</div>
 	</div>
 	
 	
