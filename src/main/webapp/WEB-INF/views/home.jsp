@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>나의 디자인 사이트</title>
+	<title>나의 코딩공부 관리</title>
 	<link rel="icon" href="./image/logo-icon.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="./css/app.css"/>
@@ -137,7 +137,7 @@
 	<!-- coding todo   -->
 	<div class="section-container">
 		<div class="title-box">
-			<div class="big-title">우리의 코딩 공부 일정</div>
+			<div class="big-title">나의 코딩 공부 일정</div>
 			<span id="go-add-todo-btn" class="app-text-btn"><i class="fa-solid fa-plus"></i> 일정추가</span>
 		</div>
 		
