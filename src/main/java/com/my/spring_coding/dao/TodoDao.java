@@ -22,4 +22,16 @@ public class TodoDao {
 	public List<Todo> getAll(){
 		return sqlSession.selectList("todo.getAll");
 	}
+	
+	public int delete(Todo todo) {
+		return sqlSession.delete("todo.delete",todo);
+	}
+	
+	public int updateComplete(Todo todo) {
+		return sqlSession.update("todo.udpate",todo);
+	}
+	
+	public Todo getByIdx(Todo todo) {
+		return sqlSession.selectOne("todo.getByIdx",todo);
+	}
 }

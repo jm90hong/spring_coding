@@ -32,6 +32,37 @@ public class TodoController {
 		return list;
 	}
 	
+	
+	@PostMapping("/delTodo")
+	public @ResponseBody String delTodo(
+				@RequestParam(value="todo_idx") int todo_idx
+			){
+			
+		Todo todo = new Todo();
+		todo.setTodo_idx(todo_idx);
+	
+		
+		todoService.delete(todo);
+		
+		return "ok";
+	}
+	
+	
+	@PostMapping("/updateComplete")
+	public @ResponseBody String updateComplete(
+				@RequestParam(value="todo_idx") int todo_idx,
+				@RequestParam(value="ny") String ny
+			){
+			
+		Todo todo = new Todo();
+		todo.setTodo_idx(todo_idx);
+		todo.setComplete_ny(ny);
+		
+		todoService.updateComplete(todo);
+		
+		return "ok";
+	}
+	
 	@PostMapping("/add")
 	public @ResponseBody  String add(
 				@RequestParam(value="name") String name,

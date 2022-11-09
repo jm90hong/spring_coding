@@ -13,5 +13,26 @@
 		SELECT * FROM todo
 		ORDER BY todo_idx DESC
 	</select>
+	
+	<select id="getByIdx" parameterType="Todo" resultType="Todo">
+		SELECT * FROM todo
+		WHERE todo_idx=#{todo_idx}
+	</select>
+	
+	
+	<update id="updateComplete" parameterType="Todo">
+		UPDATE todo
+		SET
+			complete_ny=#{complete_ny}
+		WHERE
+			todo_idx=#{todo_idx}	
+	</update>
+	
+	
+	<delete id="delete" parameterType="Todo">
+		DELETE FROM todo
+		WHERE
+			todo_idx=#{todo_idx}	
+	</delete>
 
 </mapper>

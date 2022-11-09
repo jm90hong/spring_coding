@@ -24,4 +24,16 @@ public class TodoService {
 		return todoDao.getAll();
 	}
 	
+	public int delete(Todo todo) {
+		return todoDao.delete(todo);
+	}
+	
+	public int updateComplete(Todo todo) {
+		return todoDao.updateComplete(todo);
+	}
+	
+	public Todo getByIdx(Todo todo) {
+		return todoDao.getByIdx(todo);
+	}
+	
 }

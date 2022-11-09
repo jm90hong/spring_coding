@@ -1,0 +1,20 @@
+
+
+
+
+.inf-box{
+	display:flex;
+	flex-direction:column;
+}
+
+.inf-box .t{
+	font-weight:700;
+	font-size:12px;	
+	color:#A7A7A7;
+	margin-top:20px;
+}
+
+.inf-box .c{
+	font-weight:700;
+	font-size:15px;	
+}

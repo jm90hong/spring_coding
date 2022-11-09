@@ -3,10 +3,14 @@
 $(document).ready(function(){
 	
 	
-	$('#testBtn').click(function(e){
-		e.preventDefault();
-		$('#testModal').modal("show");
+	//go detail todo jsp
+	$(document).on('click','.todo-list-box',function(){
+		var todoIdx= $(this).data('todo-idx');
+		location.href='./detail_todo?todo_idx='+todoIdx;
 	});
+	
+	
+	
 	
 	
 	$.ajax({
@@ -18,7 +22,7 @@ $(document).ready(function(){
 			$.each(list,function(index,item){
 				
 				$('#todo-list').append(`
-					<div class="todo-list-box">
+					<div class="todo-list-box" data-todo-idx="${item.todo_idx}">
 						<div style="display:flex;justify-content:space-between;">
 							<span>
 								<span class="tag-box ${item.importance=='중요' ? 'red' : 'yellow'}">${item.importance}</span>
