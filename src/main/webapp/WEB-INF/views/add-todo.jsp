@@ -10,6 +10,11 @@
 	<link rel="stylesheet" href="./css/app.css"/>
 	<script src="https://kit.fontawesome.com/9299056aff.js" crossorigin="anonymous"></script>
 	
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+	  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+	  crossorigin="anonymous"></script>
+	  
+	<script src="./js/add-todo.js"></script>
 </head>
 <body>
 	
@@ -32,21 +37,21 @@
 			개발공부 일정등록
 		</div>
 		<div style="display:flex;flex-direction:column;align-items:center;">
-			<select class="app-select-box">
+			<select id="type" class="app-select-box">
 				<option value="웹프론트">웹프론트</option>
 				<option value="웹백엔드">웹백엔드</option>
 				<option value="데이터베이스">데이터베이스</option>
 				<option value="리눅스서버">리눅스서버</option>
 			</select>
-			<select class="app-select-box">
+			<select id="importance" class="app-select-box">
 				<option value="중요">중요</option>
 				<option value="보통">보통</option>
 			</select>
-			<input class="app-inp" placeholder="이름"/>
-			<input class="app-inp" placeholder="개발공부 내용"/>
+			<input id="name" class="app-inp" placeholder="이름"/>
+			<input id="title" class="app-inp" placeholder="개발공부 내용"/>
 			
 			
-			<button class="app-long-btn">
+			<button id="add-todo-btn" class="app-long-btn">
 				일정등록하기
 			</button>
 			

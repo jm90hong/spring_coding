@@ -13,7 +13,11 @@
 	  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
 	  crossorigin="anonymous"></script>
 	  
-	 <script src="./js/home.js"></script>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+	integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+	crossorigin="anonymous"></script>  
+ 	<script src="./js/home.js"></script>
 	 
 </head>
 <body>
@@ -138,7 +142,7 @@
 		</div>
 		
 		<div id="todo-list">
-			<div class="todo-list-box">
+			<div class="todo-list-box" data-toggle="modal" data-target="#exampleModalCenter" >
 				<div style="display:flex;justify-content:space-between;">
 					<span>
 						<span class="tag-box red">중요</span>
@@ -213,6 +217,31 @@
 				<span>혼자산책</span>
 			</div>
 		</div>	
+	</div>
+	
+	<!-- Button trigger modal -->
+	<button id="testModal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+	  Launch demo modal
+	</button>
+	
+	<!-- Modal -->
+	<!-- 회원가입 확인 Modal-->
+	<div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">모달테스트</h5>
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">X</span>
+					</button>
+				</div>
+				<div class="modal-body">내용 입력 !!</div>
+				<div class="modal-footer">
+					<a class="btn" id="modalY" href="#">예</a>
+					<button class="btn" type="button" data-dismiss="modal">아니요</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	
 </body>
