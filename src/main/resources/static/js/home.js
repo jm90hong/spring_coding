@@ -21,6 +21,13 @@ $(document).ready(function(){
 			$('#tood-list').empty();
 			$.each(list,function(index,item){
 				
+				var com;
+				if(item.complete_ny=='y'){
+					com="완료";
+				}else{
+					com="미완료";
+				}
+				
 				$('#todo-list').append(`
 					<div class="todo-list-box" data-todo-idx="${item.todo_idx}">
 						<div style="display:flex;justify-content:space-between;">
@@ -33,7 +40,7 @@ $(document).ready(function(){
 							</span>
 						</div>
 						<p class="content">
-							${item.title}
+							[${com}] ${item.title}
 						</p>
 					</div>	
 				`);

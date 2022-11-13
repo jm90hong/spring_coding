@@ -142,7 +142,7 @@
 		</div>
 		
 		<div id="todo-list">
-			<div class="todo-list-box" data-toggle="modal" data-target="#exampleModalCenter" >
+			<!-- <div class="todo-list-box" data-toggle="modal" data-target="#exampleModalCenter" >
 				<div style="display:flex;justify-content:space-between;">
 					<span>
 						<span class="tag-box red">중요</span>
@@ -185,7 +185,7 @@
 				<p class="content">
 					mySQL 쿼리문 연습하기 / select, update, insert, delete
 				</p>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	

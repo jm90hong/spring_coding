@@ -26,7 +26,7 @@ $(document).ready(function(){
 	});
 	
 	
-	$('#update-btn').click(function(){
+	$('#complete-btn').click(function(){
 		$.ajax({
 			url:'./todo/updateComplete',
 			type:'post',

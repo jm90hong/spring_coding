@@ -4,9 +4,9 @@
 	 		
 	<insert id="add" parameterType="Todo">
 		INSERT INTO todo
-		(name, title, type, importance, created_date)
+		(name, title, type, importance,complete_ny created_date)
 		VALUES
-		(#{name}, #{title}, #{type}, #{importance}, SYSDATE())
+		(#{name}, #{title}, #{type}, #{importance},'n', SYSDATE())
 	</insert>	 		
 	 		
 	<select id="getAll" resultType="Todo">

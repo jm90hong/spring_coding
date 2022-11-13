@@ -40,6 +40,9 @@
 				<span class="t">글쓴이</span>
 				<span class="c">${todo.name}</span>
 			</div>
+			
+			
+			
 		</div>
 		
 		<div>

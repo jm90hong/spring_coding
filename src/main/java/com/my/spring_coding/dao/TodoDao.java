@@ -28,7 +28,7 @@ public class TodoDao {
 	}
 	
 	public int updateComplete(Todo todo) {
-		return sqlSession.update("todo.udpate",todo);
+		return sqlSession.update("todo.updateComplete",todo);
 	}
 	
 	public Todo getByIdx(Todo todo) {
